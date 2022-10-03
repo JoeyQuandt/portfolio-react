@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b98836ab.css",
+    "main.js": "/static/js/main.1e4463b8.js",
+    "static/media/concerto.png": "/static/media/concerto.25e4856f7ab2f7812df1.png",
+    "static/media/make-a-wish.png": "/static/media/make-a-wish.21af7661a5ec2b6b3f8b.png",
+    "static/media/care.png": "/static/media/care.7d674850fec354a78fd2.png",
+    "static/media/ik2.png": "/static/media/ik2.3eba6c5a8742370c722c.png",
+    "static/media/ik3.png": "/static/media/ik3.4b662719c49d44a313a7.png",
+    "static/media/correct.png": "/static/media/correct.d8f2072bf5fdee8cb532.png",
+    "static/media/logo.svg": "/static/media/logo.7e54e260adf4d51b784d534ea6c4df95.svg",
+    "index.html": "/index.html",
+    "main.b98836ab.css.map": "/static/css/main.b98836ab.css.map",
+    "main.1e4463b8.js.map": "/static/js/main.1e4463b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b98836ab.css",
+    "static/js/main.1e4463b8.js"
+  ]
+}
