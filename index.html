@@ -1,28 +1,91 @@
-<!doctype html><html lang="en">
-    <head>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-THKRBKR');</script>
-        <!-- End Google Tag Manager -->
-        <meta charset="utf-8"/><link rel="icon" href="../src/assets/logo.svg"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/>
-        <link rel="apple-touch-icon" href="/logo192.png"/>
-        <link rel="manifest" href="/manifest.json"/>
-        <title>Portfolio Site | Joey Quandt</title>
-        <script defer="defer" src="/static/js/main.765b09ba.js">
-        </script><link href="/static/css/main.d788ba3d.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THKRBKR"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-            <!-- End Google Tag Manager (noscript) -->
-        <noscript>You need to enable JavaScript to run this app.
-        </noscript>
-        <div id="root"></div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Joey Quandt</title>
+    <script type="module" crossorigin src="./assets/index.c685cf57.js"></script>
+    <link rel="stylesheet" href="./assets/index.05b80ec0.css">
+  </head>
+  <body data-theme="black" onload="loadingscreen()">
+    <div id="loading">
+      <div class="loading-container">
+        <div class="loader"></div>
+        <h1>BRB, working on my side project</h1>
+      </div>
+    </div>
+    <header>
+      <nav class="nav-bar">
+        <h1  class="logo">Joey Quandt</h1>
+        <ul id="nav-links" class="nav-links">
+          <li class="nav-link"><a href="index.html">Home</a></li>
+          <li class="nav-link"><a href="work.html">Work</a></li>
+          <li class="nav-link"><a target="_blank" href="https://github.com/JoeyQuandt">Github</a></li>
+          <li class="nav-link"><a href="mailto: joeyquandt@outlook.com">Contact</a></li>
+        </ul>
+        <ul id="nav-links-hamburger">
+          <li class="nav-link"><a href="index.html">Home</a></li>
+          <li class="nav-link"><a href="work.html">Work</a></li>
+          <li class="nav-link"><a target="_blank" href="https://github.com/JoeyQuandt">Github</a></li>
+          <li class="nav-link"><a href="mailto: joeyquandt@outlook.com">Contact</a></li>
+        </ul>
+        <div class="hamburger-light-mode">
+          <button id="light-mode-btn" class="light-mode-btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          <button id="hamburger-container"></button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="threejs">
+        <canvas id="bg"></canvas>
+      </section>
+      <section class="about hidden">
+          <div class="about-card-text">
+            <h2>Hi, I'm Joey Quandt</h2>
+            <p>Digital Creator(Front-end/Design)</p>
+            <button class="download-cv">Download CV <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <img id="ik" src="./assets/ik.ba57a654.png" alt="me">
+      </section>
+      <section class="bio hidden">
+        <h2 class="title">Bio</h2>
+        <p>
+          I'm a 22y/o front-end developer and I like to build new cool stuff . I'm interested 
+          in <span class="bold">web development</span>, <span class="bold">design</span> and experimenting with <span class="bold">new technologies!</span>
+        </p>
+        <p>
+          My passion for web development brought me to the Hague University of Applied
+          Sciences where I am working on my bachelor's degree. In my free time, I like 
+          to get <span class="green">creative </span>and draw, go to the <span class="green">gym</span> and tinker with <span class="green">computers</span>.
+        </p>
+      </section>
+      <section class="work">
+        <h2 class="title">Things I've Build</h2>
+        <div id="work-cards" class="work-cards">
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-line"></div>
+      <div class="footer-text">
+        <p>This Website doesn't track you. Have a nice day</p>
+        <p>© Joey Quandt. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+    <script>
+      const load = document.getElementById("loading")
+      function loadingscreen(){
+        load.style.display="none"
+      }
+    </script>
+  </body>
 </html>
